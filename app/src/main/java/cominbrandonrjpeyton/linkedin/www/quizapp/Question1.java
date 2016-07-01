@@ -8,6 +8,7 @@ import android.widget.CheckBox;
 
 public class Question1 extends AppCompatActivity {
     int usersScore = 0;
+    int usersWrongCBoxes = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,13 +29,20 @@ public class Question1 extends AppCompatActivity {
         CheckBox rightAnswerThree = (CheckBox)findViewById(R.id.q1_optionD);
         boolean hasThirdAnswer = rightAnswerThree.isChecked();
 
+        //See if user checked the wrong answer
+        CheckBox wrongAnswer = (CheckBox)findViewById(R.id.q1_optionC);
+        boolean hasWrongAnswer = wrongAnswer.isChecked();
+
         //Calculate score
         int score = calculateScore(hasFirstAnswer, hasSecondAnswer, hasThirdAnswer);
 
+        //Add users incorrect checkbox
+        int mistakes = calculateNegativeScore(hasWrongAnswer);
+
         Intent intent = new Intent(this, Question2.class);
         intent.putExtra("Score_After_One", score);
+        intent.putExtra("Errors_After_One", mistakes);
         startActivity(intent);
-
 
     }
 
@@ -58,5 +66,17 @@ public class Question1 extends AppCompatActivity {
 
         //Add points earn from this question to total score.
         return questionScore + usersScore;
+    }
+
+    private int calculateNegativeScore(boolean addWrongAnswer) {
+        int negativeScore = 0;
+
+        //Add 1 instance to the number of times the user selected the wrong checkbox.
+        if (addWrongAnswer) {
+            negativeScore += + 1;
+        }
+
+        //Add this instance to the users total wrong checkboxes.
+        return negativeScore + usersWrongCBoxes;
     }
 }

@@ -9,13 +9,16 @@ import android.widget.Toast;
 
 public class Question5 extends AppCompatActivity {
     int currentScore;
+    int usersWrongCBoxes;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_question5);
         int q4Score = getIntent().getExtras().getInt("Score_After_Four", 0);
+        int q4Errors = getIntent().getExtras().getInt("Errors_After_Four", 0);
         currentScore = q4Score;
+        usersWrongCBoxes = q4Errors;
     }
 
     public void submitAnswer(View view) {
@@ -27,7 +30,7 @@ public class Question5 extends AppCompatActivity {
         int score = calculateScore(answer);
 
         //Show the user their score.
-        Toast.makeText(this, "You scored a " + score + " out of 10!", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "You scored a " + score + " out of 10!\nWith " + usersWrongCBoxes + " out of 4 incorrect checkboxes", Toast.LENGTH_LONG).show();
 
     }
 

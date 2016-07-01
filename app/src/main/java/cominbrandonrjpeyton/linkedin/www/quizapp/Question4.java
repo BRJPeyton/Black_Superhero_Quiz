@@ -8,13 +8,16 @@ import android.widget.EditText;
 
 public class Question4 extends AppCompatActivity {
     int currentScore = 0;
+    int usersWrongCBoxes = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_question4);
         int q3Score = getIntent().getExtras().getInt("Score_After_Three", 0);
+        int q3Errors = getIntent().getExtras().getInt("Errors_After_Three", 0);
         currentScore = q3Score;
+        usersWrongCBoxes = q3Errors;
     }
 
     public void submitAnswer(View view) {
@@ -27,6 +30,7 @@ public class Question4 extends AppCompatActivity {
 
         Intent intent = new Intent(this, Question5.class);
         intent.putExtra("Score_After_Four", score);
+        intent.putExtra("Errors_After_Four", usersWrongCBoxes);
         startActivity(intent);
     }
 
