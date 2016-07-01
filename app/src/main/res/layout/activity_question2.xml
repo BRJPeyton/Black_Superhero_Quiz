@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_question_two"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cominbrandonrjpeyton.linkedin.www.quizapp.Question2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Question 2" />
+        
+        <CheckBox
+            android:id="@+id/q2_optionA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="option A"/>
+        
+        <CheckBox
+            android:id="@+id/q2_optionB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="option B"/>
+
+        <CheckBox
+            android:id="@+id/q2_optionC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="option C"/>
+
+        <CheckBox
+            android:id="@+id/q2_optionD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="option D"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Next Question"
+            android:onClick="submitAnswer"/>
+
+    </LinearLayout>
+
+</ScrollView>

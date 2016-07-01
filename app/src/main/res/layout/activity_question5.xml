@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_question5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cominbrandonrjpeyton.linkedin.www.quizapp.Question5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Question 5"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Option 1" />
+
+            <RadioButton
+                android:id="@+id/q5_optionB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Option 2"/>
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Option 3"/>
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Option 4"/>
+
+        </RadioGroup>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Conclusion"
+            android:onClick="submitAnswer"/>
+
+        <Button
+            android:text="Get Answers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="answerSheet"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
