@@ -10,53 +10,58 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="20dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="20dp">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
             android:layout_marginBottom="20dp"
-            android:text="@string/question_three" />
+            android:text="@string/question_three"
+            android:textColor="@color/primarytext"
+            android:textSize="20sp" />
 
         <CheckBox
             android:id="@+id/q3_optionA"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
             android:layout_marginBottom="12dp"
-            android:text="@string/q3_optionA"/>
+            android:text="@string/q3_optionA"
+            android:textColor="@color/secondarytext"
+            android:textSize="16sp" />
 
         <CheckBox
             android:id="@+id/q3_optionB"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
             android:layout_marginBottom="12dp"
-            android:text="@string/q3_optionB"/>
+            android:text="@string/q3_optionB"
+            android:textColor="@color/secondarytext"
+            android:textSize="16sp" />
 
         <CheckBox
             android:id="@+id/q3_optionC"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
             android:layout_marginBottom="12dp"
-            android:text="@string/q3_optionC"/>
+            android:text="@string/q3_optionC"
+            android:textColor="@color/secondarytext"
+            android:textSize="16sp" />
 
         <CheckBox
             android:id="@+id/q3_optionD"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
             android:layout_marginBottom="12dp"
-            android:text="@string/q3_optionD"/>
+            android:text="@string/q3_optionD"
+            android:textColor="@color/secondarytext"
+            android:textSize="16sp" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/submit_answer"
-            android:onClick="submitAnswer"/>
+            android:onClick="submitAnswer"
+            android:text="@string/submit_answer" />
 
     </LinearLayout>
 

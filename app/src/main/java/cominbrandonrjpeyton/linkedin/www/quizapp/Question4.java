@@ -8,13 +8,15 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class Question4 extends AppCompatActivity {
-    int currentScore = 0;
-    int usersWrongCBoxes = 0;
+    private int currentScore = 0;
+    private int usersWrongCBoxes = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_question4);
+
+        //Get the current score and mistakes from question 3
         int q3Score = getIntent().getExtras().getInt("Score_After_Three", 0);
         int q3Errors = getIntent().getExtras().getInt("Errors_After_Three", 0);
         currentScore = q3Score;

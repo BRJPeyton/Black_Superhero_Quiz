@@ -23,6 +23,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
                 android:text="@string/question_five"
+                android:textColor="@color/primarytext"
                 android:textSize="20sp" />
 
             <RadioGroup
@@ -35,6 +36,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="12dp"
                     android:text="@string/q5_optionA"
+                    android:textColor="@color/secondarytext"
                     android:textSize="16sp" />
 
                 <RadioButton
@@ -43,6 +45,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="12dp"
                     android:text="@string/q5_optionB"
+                    android:textColor="@color/secondarytext"
                     android:textSize="16sp" />
 
                 <RadioButton
@@ -50,6 +53,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="12dp"
                     android:text="@string/q5_optionC"
+                    android:textColor="@color/secondarytext"
                     android:textSize="16sp" />
 
                 <RadioButton
@@ -57,6 +61,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="12dp"
                     android:text="@string/q5_optionD"
+                    android:textColor="@color/secondarytext"
                     android:textSize="16sp" />
 
             </RadioGroup>
@@ -66,10 +71,10 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_below="@id/question5"
             android:orientation="horizontal"
             android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:layout_below="@id/question5">
+            android:paddingRight="20dp">
 
             <Button
                 android:layout_width="match_parent"

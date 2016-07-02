@@ -6,13 +6,15 @@ import android.view.View;
 import android.widget.CheckBox;
 
 public class Question2 extends Question1 {
-    int currentScore = 0;
-    int usersWrongCBoxes = 0;
+    private int currentScore = 0;
+    private int usersWrongCBoxes = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_question2);
+
+        //Get the score and mistakes from question 1
         int qOneScore = getIntent().getExtras().getInt("Score_After_One", 0);
         int qOneErrors = getIntent().getExtras().getInt("Errors_After_One", 0);
         currentScore = qOneScore;

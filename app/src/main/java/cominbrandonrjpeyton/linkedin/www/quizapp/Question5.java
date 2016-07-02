@@ -8,13 +8,15 @@ import android.widget.RadioButton;
 import android.widget.Toast;
 
 public class Question5 extends AppCompatActivity {
-    int currentScore;
-    int usersWrongCBoxes;
+    private int currentScore;
+    private int usersWrongCBoxes;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_question5);
+
+        //Get the current score and mistakes from question 4
         int q4Score = getIntent().getExtras().getInt("Score_After_Four", 0);
         int q4Errors = getIntent().getExtras().getInt("Errors_After_Four", 0);
         currentScore = q4Score;

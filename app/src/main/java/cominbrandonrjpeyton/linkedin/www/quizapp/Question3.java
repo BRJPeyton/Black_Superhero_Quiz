@@ -7,13 +7,15 @@ import android.view.View;
 import android.widget.CheckBox;
 
 public class Question3 extends AppCompatActivity {
-    int currentScore = 0;
-    int usersWrongCBoxes = 0;
+    private int currentScore = 0;
+    private int usersWrongCBoxes = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_question3);
+
+        //Get the current score and mistakes from question 2
         int q2Score = getIntent().getExtras().getInt("Score_After_Two", 0);
         int q2Errors = getIntent().getExtras().getInt("Errors_After_Two", 0);
         currentScore = q2Score;

@@ -7,8 +7,6 @@ import android.view.View;
 import android.widget.CheckBox;
 
 public class Question1 extends AppCompatActivity {
-    int usersScore = 0;
-    int usersWrongCBoxes = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +46,7 @@ public class Question1 extends AppCompatActivity {
 
     private int calculateScore(boolean addFirstAnswer, boolean addSecondAnswer, boolean addThirdAnswer) {
         int questionScore = 0;
+        int usersScore = 0;
 
         //Add 1 point to the users score for correct answer.
         if (addFirstAnswer) {
@@ -70,6 +69,7 @@ public class Question1 extends AppCompatActivity {
 
     private int calculateNegativeScore(boolean addWrongAnswer) {
         int negativeScore = 0;
+        int usersWrongCBoxes = 0;
 
         //Add 1 instance to the number of times the user selected the wrong checkbox.
         if (addWrongAnswer) {

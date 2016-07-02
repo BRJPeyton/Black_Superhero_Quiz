@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Black Superheroes</string>
+    <string name="app_name">Black Superheroes Quiz</string>
     <string name="title">Black Superhero Quiz</string>
     <string name="intro">In the 20+ years that Hollywood has been obsessed with the superhero genre, there have been
         only two blockbuster productions starring major black superheroes.
@@ -24,7 +24,7 @@
     <string name="q2_optionB">B) Luke Cage</string>
     <string name="q2_optionC">C) Danielle Cage</string>
     <string name="q2_optionD">D) Sam Wilson</string>
-    <string name="question_three">Which of the following <i>Justice League</i> (TV Series) characters was black?</string>
+    <string name="question_three">Which of the following <i>Justice League</i> (TV Series) characters were black?</string>
     <string name="q3_optionA">A) Flash</string>
     <string name="q3_optionB">B) John Stewart</string>
     <string name="q3_optionC">C) Martian Manhunter</string>

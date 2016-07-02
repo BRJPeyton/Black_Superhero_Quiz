@@ -16,18 +16,20 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/title"
-            android:textSize="24sp"
+            android:layout_marginBottom="16dp"
             android:gravity="center_horizontal"
-            android:layout_marginBottom="16dp"/>
+            android:text="@string/title"
+            android:textColor="@color/primarytext"
+            android:textSize="24sp" />
 
         <TextView
             android:id="@+id/intro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
             android:layout_marginTop="16dp"
             android:text="@string/intro"
-            android:layout_marginBottom="16dp"/>
+            android:textColor="@color/primarytext" />
 
         <Button
             android:id="@+id/buttonStartQuiz"
