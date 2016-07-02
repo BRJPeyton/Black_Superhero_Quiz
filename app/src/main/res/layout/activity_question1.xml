@@ -10,41 +10,52 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="20dp">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Question 1" />
+            android:textSize="20sp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/question_one" />
 
         <CheckBox
             android:id="@+id/q1_optionA"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="option A"/>
+            android:textSize="16sp"
+            android:layout_marginBottom="12dp"
+            android:text="@string/q1_optionA"/>
 
         <CheckBox
             android:id="@+id/q1_optionB"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="option B"/>
+            android:textSize="16sp"
+            android:layout_marginBottom="12dp"
+            android:text="@string/q1_optionB"/>
 
         <CheckBox
             android:id="@+id/q1_optionC"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="option C"/>
+            android:textSize="16sp"
+            android:layout_marginBottom="12dp"
+            android:text="@string/q1_optionC"/>
 
         <CheckBox
             android:id="@+id/q1_optionD"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="option D"/>
+            android:textSize="16sp"
+            android:layout_marginBottom="12dp"
+            android:text="@string/q1_optionD"/>
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Next Question"
+            android:text="@string/submit_answer"
             android:onClick="submitAnswer"/>
 
     </LinearLayout>

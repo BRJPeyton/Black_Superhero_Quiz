@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class Question4 extends AppCompatActivity {
     int currentScore = 0;
@@ -25,6 +26,12 @@ public class Question4 extends AppCompatActivity {
         EditText title = (EditText)findViewById(R.id.q4_answer);
         String answer = title.getText().toString();
 
+        //make sure the user enters an answer
+        if (answer.equals("")) {
+            Toast.makeText(this, "Come on, at least take a guess!", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
         //Calculate score
         int score = calculateScore(answer);
 
@@ -38,7 +45,7 @@ public class Question4 extends AppCompatActivity {
         int questionScore = 0;
 
         //Add 1 point to the users score for correct answer.
-        if (answer.matches("blade|Blade"))
+        if (answer.matches("blade|Blade|BLADE"))
             questionScore += +1;
 
         //Add points earn from this question to total score.

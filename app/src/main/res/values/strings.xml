@@ -1,3 +1,51 @@
 <resources>
-    <string name="app_name">Quiz App</string>
+    <string name="app_name">Black Superheroes</string>
+    <string name="title">Black Superhero Quiz</string>
+    <string name="intro">In the 20+ years that Hollywood has been obsessed with the superhero genre, there have been
+        only two blockbuster productions starring major black superheroes.
+        \n
+        \nThat\'s right two: Blade and Spawn.
+        \n
+        \nBut, things <u>are</u> looking up.  within the next five years we\'ll be getting a Black Panther movie and a
+        Cyborg movie, plus Luke Cage bursting onto the Netflix scene as early as this year.  And we can only
+        hope that this is the beginning of a trend that is poised to continue.
+        \n
+        \nBut are you ready?  How well do you know the major players in the Black Superhero game?  Well, you can take this quiz
+        and find out.</string>
+    <string name="start_button">Start Quiz</string>
+    <string name="question_one">Which of the following characters has donned the mantle of Black Panther?</string>
+    <string name="q1_optionA">A) T\'Chaka</string>
+    <string name="q1_optionB">B) T\'Challa</string>
+    <string name="q1_optionC">C) Zavimbe</string>
+    <string name="q1_optionD">D) Shuri</string>
+    <string name="submit_answer">Submit Answer</string>
+    <string name="question_two">Which of the following characters has donned the mantle of Captain America?</string>
+    <string name="q2_optionA">A) Isaiah Bradley</string>
+    <string name="q2_optionB">B) Luke Cage</string>
+    <string name="q2_optionC">C) Danielle Cage</string>
+    <string name="q2_optionD">D) Sam Wilson</string>
+    <string name="question_three">Which of the following <i>Justice League</i> (TV Series) characters was black?</string>
+    <string name="q3_optionA">A) Flash</string>
+    <string name="q3_optionB">B) John Stewart</string>
+    <string name="q3_optionC">C) Martian Manhunter</string>
+    <string name="q3_optionD">D) Hawkgirl</string>
+    <string name="question_four">What was the title of the first theatrical film released by Marvel Enterprises?</string>
+    <string name="hint">Title</string>
+    <string name="question_five">Which of the following characters has donned the mantle of Spider-man</string>
+    <string name="q5_optionA">A) Cliff Robertson</string>
+    <string name="q5_optionB">B) Miles Morales</string>
+    <string name="q5_optionC">C) Randy Robertson</string>
+    <string name="q5_optionD">D) Harry Osborn</string>
+    <string name="answer_key">1.    T\'Chaka, T\'Challa, Shuri
+    \n
+    \n2.    Isaiah Bradley, Danielle Cage, Sam Wilson
+    \n
+    \n3.    John Stewart, Martian Manhunter
+    \n
+    \n4.    Blade
+    \n
+    \n5.    Miles Morales</string>
+    <string name="results">Get Score!</string>
+    <string name="see_answers">See Answers</string>
+    <string name="restart_quiz">Restart Quiz</string>
 </resources>
