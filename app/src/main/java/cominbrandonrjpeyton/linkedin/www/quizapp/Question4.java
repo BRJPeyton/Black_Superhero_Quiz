@@ -30,7 +30,7 @@ public class Question4 extends AppCompatActivity {
 
         //make sure the user enters an answer
         if (answer.equals("")) {
-            Toast.makeText(this, "Come on, at least take a guess!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.guess, Toast.LENGTH_SHORT).show();
             return;
         }
 

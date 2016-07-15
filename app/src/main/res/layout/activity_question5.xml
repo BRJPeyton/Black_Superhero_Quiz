@@ -5,11 +5,12 @@
     android:id="@+id/activity_question5"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/grey_background"
     tools:context="cominbrandonrjpeyton.linkedin.www.quizapp.Question5">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <LinearLayout
             android:id="@+id/question5"

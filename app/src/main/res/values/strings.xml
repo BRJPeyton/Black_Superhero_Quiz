@@ -48,4 +48,5 @@
     <string name="results">Get Score!</string>
     <string name="see_answers">See Answers</string>
     <string name="restart_quiz">Restart Quiz</string>
+    <string name="guess">Come on, at least take a guess!</string>
 </resources>
